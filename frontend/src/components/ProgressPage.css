@@ -1,0 +1,42 @@
+.progress-bar-container {
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 20px;
+    margin: 20px 0;
+}
+
+.progress-bar-fill {
+    background-color: #4caf50;
+    height: 100%;
+    text-align: center;
+    color: white;
+    line-height: 20px; 
+}
+
+.download-section {
+    margin-top: 20px;
+}
+
+.download-button, .share-button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.share-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.share-error-message {
+    margin-top: 10px;
+    color: red; 
+}

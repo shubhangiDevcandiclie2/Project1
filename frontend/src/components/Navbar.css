@@ -1,0 +1,263 @@
+.navbar-container {
+    width: 100%;
+    background-color: lightsalmon; 
+    /* background-color: rgb(231, 136, 149); */
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .navbar .logo img {
+    height: 70px;
+    width: 90px;
+    margin-bottom: 10px;
+    /* opacity: 0.5; 
+} */
+
+.navbar .logo img {
+    height: 70px;
+    width: 90px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: rotateLogo 5s infinite linear;
+    border: none; /* Ensure no border around the logo */
+}
+
+/* Hover Effects */
+.navbar .logo img:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: none; /* Remove any box-shadow if you don't want the glow effect */
+}
+
+/* Keyframe Animation */
+@keyframes rotateLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo a {
+    /* font-family: ; */
+    font-size: 24px;
+    font-weight: bold;
+    /* color: #333; */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    /* color: #007bff; */
+    color: #333;
+}
+
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.breadcrumb li {
+    color: #666;
+}
+
+.breadcrumb li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb li::after {
+    content: '>';
+    margin-left: 10px;
+    .navbar-container {
+        width: 100%;
+        background-color: lightsalmon;
+        padding: 15px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo a {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .logo a:hover {
+        color: #007bff;
+    }
+    
+    /* Breadcrumb styles */
+    .breadcrumb {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        font-size: 16px;
+    }
+    
+    .breadcrumb li {
+        color: #666;
+    }
+    
+    .breadcrumb li a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .breadcrumb li a:hover {
+        text-decoration: underline;
+    }
+    
+    .breadcrumb li::after {
+        content: '>';
+        margin-left: 10px;
+        color: #ccc;
+    }
+    
+    .breadcrumb li:last-child::after {
+        content: '';
+        
+    }
+    
+    /* Responsive behavior for smaller screens */
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .logo {
+            margin-top: 10px;
+        }
+    
+        .breadcrumb {
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+    }
+    
+    /* Responsive behavior for mobile screens (max-width: 576px) */
+    @media (max-width: 576px) {
+        .navbar-container {
+            padding: 10px 15px;
+        }
+    
+        .logo a {
+            font-size: 20px;
+        }
+    
+        .breadcrumb {
+            font-size: 14px;
+        }
+    
+        .breadcrumb li::after {
+            margin-left: 5px;
+        }
+    }
+    
+    /* Extra small screens (375px or smaller) */
+    @media (max-width: 375px) {
+        .navbar-container {
+            padding: 8px 10px;
+        }
+    
+        .logo a {
+            font-size: 18px;
+        }
+    
+        .breadcrumb {
+            font-size: 12px;
+        }
+    
+        .breadcrumb li::after {
+            margin-left: 3px;
+        }
+    }
+    color: #ccc;
+}
+
+.breadcrumb li:last-child::after {
+    content: '';
+    /* Remove '>' from the last breadcrumb */
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+    .breadcrumb {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
+
+/* Responsive behavior for mobile screens (max-width: 576px) */
+@media (max-width: 576px) {
+    .navbar-container {
+        padding: 10px 15px;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .breadcrumb {
+        font-size: 14px;
+    }
+
+    .breadcrumb li::after {
+        margin-left: 5px;
+    }
+}
+
+/* Extra small screens (375px or smaller) */
+@media (max-width: 375px) {
+    .navbar-container {
+        padding: 8px 10px;
+    }
+
+    .logo a {
+        font-size: 18px;
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+    }
+
+    .breadcrumb li::after {
+        margin-left: 3px;
+    }
+}

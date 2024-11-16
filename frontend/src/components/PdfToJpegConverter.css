@@ -1,0 +1,264 @@
+/* Container Styling */
+.pdf-converter-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #f5f7fa; /*Soft off-white background  */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Clean, modern font */
+  color: #4a4a4a;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Container Hover Effect */
+.pdf-converter-container:hover {
+  transform: scale(1.03);
+}
+
+/* Heading Styling */
+.pdf-converter-container h1 {
+  font-size: 32px;
+  color: #0056b3; /* Deep blue for primary text */
+  margin-bottom: 20px;
+  font-weight: 700; /* Bold for emphasis */
+  letter-spacing: 1px;
+  animation: fadeIn 1s ease-in-out; /* Fade in animation */
+}
+
+/* Keyframe Animation for Heading */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Input Styling */
+.pdf-converter-container input[type="file"] {
+  margin-top: 15px;
+  padding: 14px;
+  border: 2px solid #00a8cc; /* Bright blue for input border */
+  border-radius: 10px;
+  width: 100%;
+  max-width: 340px;
+  font-size: 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Hover and Focus Effects */
+.pdf-converter-container input[type="file"]:hover,
+.pdf-converter-container input[type="file"]:focus {
+  border-color: #007ba7; /* Darker blue on hover */
+  box-shadow: 0 0 10px rgba(0, 123, 167, 0.5); /* Blue glow */
+}
+
+/* Download Options Styling */
+.pdf-converter-container label {
+  display: inline-block;
+  margin: 12px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #4a4a4a; /* Blue for labels */
+}
+
+.pdf-converter-container input[type="radio"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+/* Button Styling */
+.pdf-converter-container .convert-button {
+  background-color: #77b491;
+  color: white;
+  padding: 10px 18px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+.pdf-converter-container .convert-button:hover {
+  background-color: #2ecc71;
+  transform: translateY(-2px);
+}
+
+.pdf-converter-container .convert-button:disabled {
+
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Success/Error Message Styling */
+.success-message {
+  color: #28a745;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInMessage 1s forwards;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInMessage 1s forwards;
+}
+
+/* Fade In Message Animation */
+@keyframes fadeInMessage {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Download Section Styling */
+.download-section {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.download-section h2 {
+  font-size: 26px;
+  color: #77b491; /* Deep blue for headings */
+  font-weight: 700;
+}
+
+.download-section div {
+  margin-top: 15px;
+}
+
+/* Download Button Styling */
+.pdf-converter-container .download-section button {
+  padding: 10px 20px;
+  background-color: #77b491; /* Primary blue for button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); /* Blue shadow */
+}
+
+/* Download Button Hover Effect */
+.pdf-converter-container .download-section button:hover {
+  background-color: #2ecc71;
+  transform: translateY(-3px); /* Button lift */
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .pdf-converter-container {
+    width: 95%;
+  }
+
+  .pdf-converter-container h1 {
+    font-size: 26px;
+  }
+
+  .download-section h2 {
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+/* ZIP file CSS*/
+/* .pdf-to-jpeg-converter {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.pdf-to-jpeg-converter h2 {
+  margin-bottom: 20px;
+}
+
+.pdf-to-jpeg-converter input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.pdf-to-jpeg-converter button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pdf-to-jpeg-converter button:hover {
+  background-color: #45a049;
+}
+
+.pdf-to-jpeg-converter a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.pdf-to-jpeg-converter a:hover {
+  background-color: #0b7dda;
+}
+
+
+.pdf-to-jpeg-converter {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content h3 {
+  margin: 0 0 10px;
+}
+
+.popup-content button {
+  margin-top: 10px;
+} */

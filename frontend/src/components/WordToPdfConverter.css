@@ -1,0 +1,82 @@
+/* WordToPdfConverter.css */
+.container {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #ffa07a; /* Use a light orange background color */
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header img {
+  width: 30px;
+  height: 30px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.file-upload {
+  border: 2px dashed #ccc;
+  padding: 40px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+.file-upload:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+.selected-file {
+  color: #333;
+  margin-top: 15px;
+}
+
+.convert-button {
+  padding: 10px 20px;
+  background-color: #ffa07a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.convert-button:hover {
+  background-color: #ff7f50; /* Darker shade on hover */
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.download-link {
+  margin-top: 20px;
+  font-size: 1em;
+  text-decoration: none;
+  color: #555;
+}
+
+.download-link:hover {
+  color: #ffa07a;
+}

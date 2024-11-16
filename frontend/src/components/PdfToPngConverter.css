@@ -1,0 +1,122 @@
+
+.pdf-converter-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+
+.pdf-converter-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.pdf-converter-container input[type="file"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.pdf-converter-container .convert-button {
+  padding: 10px 20px;
+  background-color: #77b491;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.pdf-converter-container .convert-button:hover {
+  background-color: #2ecc71;
+}
+
+
+.pdf-converter-container .success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+.pdf-converter-container .error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Fade In Message Animation */
+@keyframes fadeInMessage {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Download Section Styling */
+.download-section {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.download-section h2 {
+  font-size: 26px;
+  color: #77b491; /* Deep blue for headings */
+  font-weight: 700;
+}
+
+.download-section div {
+  margin-top: 15px;
+}
+
+/* Download Button Styling */
+.pdf-converter-container .download-section button {
+  padding: 10px 20px;
+  background-color: #77b491; /* Primary blue for button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); /* Blue shadow */
+}
+
+/* Download Button Hover Effect */
+.pdf-converter-container .download-section button:hover {
+  background-color: #2ecc71;
+  transform: translateY(-3px); /* Button lift */
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .pdf-converter-container {
+    width: 95%;
+  }
+
+  .pdf-converter-container h1 {
+    font-size: 26px;
+  }
+
+  .download-section h2 {
+    font-size: 22px;
+  }
+}
